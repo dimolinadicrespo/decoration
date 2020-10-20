@@ -1,0 +1,33 @@
+{
+    "name": "dimolina/php-bootstrap",
+    "description": "Starting point for simple php projects",
+    "type": "project",
+    "require": {
+        "phpmailer/phpmailer": "dev-master"
+    },
+    "require-dev": {
+        "larapack/dd": "dev-master",
+        "stephanecoinon/mailtrap": "dev-master",
+        "phpunit/phpunit": "^9.5@dev"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Diego Molina",
+            "email": "molinacrespo@gmail.com"
+        }
+    ],
+    "autoload" : {
+        "files": ["src/helpers.php"],
+        "psr-4" : {
+            "Dimolina\\" : "src/"
+        }
+    },
+    "autoload-dev" : {
+        "files": ["src/helpers.php"],
+        "psr-4" : {
+            "Dimolina\\Tests\\" : "tests/"
+        }
+    },
+    "minimum-stability": "dev"
+}
